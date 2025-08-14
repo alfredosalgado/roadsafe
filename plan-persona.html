@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Persona - ROADSAFE | GPS para Vehículos Personales</title>
+    <meta name="description" content="Plan Persona ROADSAFE - Soluciones GPS para tu vehículo personal. Rastreo satelital, control antirrobo y tranquilidad total para ti y tu familia.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/img/logo.jpg" alt="ROADSAFE Logo" class="logo">
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">Planes</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="plan-persona.html" class="dropdown-link active">Plan Persona</a></li>
+                                <li><a href="plan-empresa.html" class="dropdown-link">Plan Empresa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+                        <li><a href="index.html#testimonios" class="nav-link">Testimonios</a></li>
+                        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Inicio</a></li>
+            <li class="mobile-menu-item"><a href="index.html#servicios" class="mobile-menu-link">Servicios</a></li>
+            <li class="mobile-menu-item"><a href="plan-persona.html" class="mobile-menu-link">Plan Persona</a></li>
+            <li class="mobile-menu-item"><a href="plan-empresa.html" class="mobile-menu-link">Plan Empresa</a></li>
+            <li class="mobile-menu-item"><a href="index.html#nosotros" class="mobile-menu-link">Nosotros</a></li>
+            <li class="mobile-menu-item"><a href="index.html#testimonios" class="mobile-menu-link">Testimonios</a></li>
+            <li class="mobile-menu-item"><a href="index.html#faq" class="mobile-menu-link">FAQ</a></li>
+            <li class="mobile-menu-item"><a href="index.html#contacto" class="mobile-menu-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Protege tu Vehículo Personal con <span class="highlight">GPS ROADSAFE</span></h1>
+                <p class="hero-subtitle">Solución GPS completa para tu auto personal. Rastreo satelital en tiempo real, control antirrobo avanzado y tranquilidad total para ti y tu familia. Instalación profesional garantizada.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Instalación</a>
+                    <a href="#servicios" class="btn btn-secondary">Ver Características</a>
+                </div>
+            </div>
+            <div class="hero-video">
+                <video class="hero-video-player" autoplay muted loop playsinline>
+                    <source src="assets/video/Paln Persona.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Servicios GPS Personales</h2>
+                <p class="section-subtitle">Todo lo que necesitas para proteger tu vehículo personal</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Rastreo GPS en Tiempo Real</h3>
+                    <p class="service-description">Localiza tu vehículo al instante desde tu smartphone. Monitoreo 24/7 con actualizaciones cada 30 segundos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Control Antirrobo</h3>
+                    <p class="service-description">Alertas inmediatas por movimiento no autorizado, corte de motor remoto y notificaciones push a tu celular.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Zonas de Seguridad</h3>
+                    <p class="service-description">Configura áreas seguras personalizadas y recibe alertas cuando tu vehículo entra o sale de estas zonas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">App Móvil Intuitiva</h3>
+                    <p class="service-description">Aplicación fácil de usar para Android e iOS. Interfaz amigable diseñada para usuarios no técnicos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Historial de Viajes</h3>
+                    <p class="service-description">Registro completo de todos tus trayectos con fechas, horarios, rutas y estadísticas de uso.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Instalación Profesional</h3>
+                    <p class="service-description">Técnicos certificados instalan tu GPS sin afectar la garantía del vehículo. Servicio a domicilio disponible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="productos" class="features">
+        <div class="container">
+            <div class="features-header">
+                <div class="features-title-section">
+                    <h2 class="section-title">Tecnología GPS de Vanguardia</h2>
+                    <p class="section-subtitle">Dispositivos GPS compactos y discretos con la última tecnología para tu vehículo personal. Diseñados para brindar máxima seguridad sin comprometer la estética.</p>
+                </div>
+                <div class="features-image-section">
+                    <div class="device-mockup">
+                        <img src="assets/img/Tecnologia Avanzada.jpg" alt="GPS Tracker Personal" class="device-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Batería de Respaldo</h4>
+                        <p>Hasta 72 horas de autonomía</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                            <line x1="12" y1="20" x2="12.01" y2="20"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Conectividad 4G</h4>
+                        <p>Transmisión instantánea y confiable</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Precisión Satelital</h4>
+                        <p>Ubicación exacta menor a 2 metros</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <circle cx="12" cy="16" r="1"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Instalación Discreta</h4>
+                        <p>Completamente oculto e indetectable</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Soporte 24/7</h4>
+                        <p>Atención técnica personalizada</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Actualizaciones Automáticas</h4>
+                        <p>Software siempre actualizado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">¿Por qué elegir ROADSAFE para tu Vehículo Personal?</h2>
+                
+                <div class="about-main-content">
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <circle cx="12" cy="12" r="10"/>
+                                </svg>
+                            </div>
+                            <div class="about-feature-content">
+                                <h4>Instalación Garantizada</h4>
+                                <p>Técnicos certificados con garantía de por vida en la instalación.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div class="about-feature-content">
+                                <h4>Máxima Seguridad</h4>
+                                <p>Protección avanzada contra robo con alertas inmediatas.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="about-feature-content">
+                                <h4>Tecnología Avanzada</h4>
+                                <p>Dispositivos GPS de última generación con precisión satelital.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="assets/img/elegir.jpg" alt="Por qué elegir ROADSAFE" class="about-img">
+                    </div>
+                </div>
+                
+                <p class="about-description">Somos especialistas en soluciones GPS para vehículos personales con más de 10 años de experiencia. Nuestro enfoque está en brindar tranquilidad total a familias y propietarios de vehículos particulares.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Lo que dicen nuestros Clientes</h2>
+                <p class="section-subtitle">Testimonios reales de familias que confían en ROADSAFE</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"Excelente servicio. Me robaron el auto y gracias al GPS de ROADSAFE lo recuperé en menos de 2 horas. La aplicación es muy fácil de usar y las alertas llegan al instante."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>Propietaria de Toyota Corolla</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"La instalación fue perfecta, no se nota nada y funciona de maravilla. Ahora puedo saber dónde está mi auto en todo momento. Mi familia se siente más segura."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Carlos Mendoza</h4>
+                            <p>Propietario de Honda Civic</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"El precio es muy accesible comparado con otros servicios. La atención al cliente es excelente y el soporte técnico responde muy rápido. Lo recomiendo 100%."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Ana Rodríguez</h4>
+                            <p>Propietaria de Nissan Sentra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Resolvemos las dudas más comunes sobre nuestro servicio GPS personal</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Afecta la garantía de mi vehículo?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, nuestros técnicos certificados realizan una instalación profesional que no afecta la garantía del fabricante. Utilizamos conectores OBD y puntos de conexión seguros.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto cuesta el servicio mensual?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ofrecemos planes desde $15.000 pesos mensuales, incluyendo monitoreo 24/7, app móvil, alertas ilimitadas y soporte técnico. Sin costos ocultos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Funciona en todo el país?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, nuestro sistema GPS funciona en todo el territorio nacional con cobertura 4G/LTE. También tiene cobertura internacional en países limítrofes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Qué pasa si se corta la energía del auto?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El dispositivo cuenta con batería de respaldo que funciona hasta 72 horas sin conexión eléctrica, enviando alertas de desconexión inmediatamente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo cancelar el servicio cuando quiera?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, no hay permanencia mínima. Puedes cancelar el servicio cuando desees sin penalizaciones. El dispositivo queda instalado en tu vehículo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="pasos" class="steps">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Protege tu Vehículo en 4 Simples Pasos</h2>
+                <p class="section-subtitle">Obtener la mejor protección GPS para tu vehículo personal nunca fue tan fácil</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Elige tu Plan Personal</h3>
+                        <p>Selecciona el plan GPS que mejor se adapte a las necesidades de tu vehículo personal y contrata de forma segura con WebPay.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Coordinamos la Instalación</h3>
+                        <p>Nuestro equipo se pondrá en contacto contigo para programar la instalación en el lugar y horario que más te convenga.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Instalación Profesional</h3>
+                        <p>Técnicos certificados realizarán la instalación completa en tu domicilio, sin afectar la garantía de tu vehículo.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Acceso Inmediato</h3>
+                        <p>Recibirás por email tus credenciales de acceso para comenzar a monitorear tu vehículo desde cualquier dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="steps-buttons">
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20contratar%20el%20Plan%20Persona%20GPS%20de%20ROADSAFE" target="_blank" class="btn btn-primary">Comenzar Ahora</a>
+                <a href="#servicios" class="btn btn-secondary">Ver Características</a>
+            </div>
+        </div>
+    </section>
+
+</footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20Plan%20Persona%20de%20ROADSAFE" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+        </svg>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

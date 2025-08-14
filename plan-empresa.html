@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Empresa - ROADSAFE GPS Empresarial</title>
+    <meta name="description" content="Soluciones GPS empresariales para gestión de flotas. Control total, rastreo satelital y monitoreo en tiempo real para empresas.">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/img/logo.jpg" alt="ROADSAFE Logo" class="logo">
+                </div>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">Inicio</a></li>
+                        <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                        <li class="nav-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle">Planes</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="plan-persona.html" class="dropdown-link">Plan Persona</a></li>
+                                <li><a href="plan-empresa.html" class="dropdown-link">Plan Empresa</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html#nosotros" class="nav-link">Nosotros</a></li>
+                        <li><a href="index.html#testimonios" class="nav-link">Testimonios</a></li>
+                        <li><a href="index.html#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <button class="nav-toggle" id="navToggle">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menú Móvil -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link">Inicio</a></li>
+            <li class="mobile-menu-item"><a href="index.html#servicios" class="mobile-menu-link">Servicios</a></li>
+            <li class="mobile-menu-item"><a href="plan-persona.html" class="mobile-menu-link">Plan Persona</a></li>
+            <li class="mobile-menu-item"><a href="plan-empresa.html" class="mobile-menu-link">Plan Empresa</a></li>
+            <li class="mobile-menu-item"><a href="index.html#nosotros" class="mobile-menu-link">Nosotros</a></li>
+            <li class="mobile-menu-item"><a href="index.html#testimonios" class="mobile-menu-link">Testimonios</a></li>
+            <li class="mobile-menu-item"><a href="index.html#faq" class="mobile-menu-link">FAQ</a></li>
+            <li class="mobile-menu-item"><a href="index.html#contacto" class="mobile-menu-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Soluciones GPS <span class="highlight">Empresariales</span></h1>
+                <p class="hero-subtitle">Control total de tu flota vehicular con tecnología GPS avanzada. Rastreo satelital, gestión de conductores y optimización de rutas para maximizar la eficiencia de tu empresa.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                    <a href="#servicios-empresa" class="btn btn-secondary">Ver Soluciones</a>
+                </div>
+            </div>
+            <div class="hero-video">
+                <video class="hero-video-player" autoplay muted loop playsinline>
+                    <source src="assets/video/Plan Empresa.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Services Section -->
+    <section id="servicios-empresa" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Soluciones GPS para Empresas</h2>
+                <p class="section-subtitle">Tecnología avanzada para la gestión eficiente de flotas vehiculares</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Gestión de Flotas</h3>
+                    <p class="service-description">Administra múltiples vehículos desde una plataforma centralizada con control total de tu flota empresarial.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Rastreo Satelital</h3>
+                    <p class="service-description">Localización GPS en tiempo real con precisión satelital para todos los vehículos de tu empresa.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Reportes Empresariales</h3>
+                    <p class="service-description">Informes detallados de rendimiento, consumo de combustible y productividad de conductores.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Control de Conductores</h3>
+                    <p class="service-description">Monitoreo del comportamiento de conductores, horarios de trabajo y evaluación de desempeño.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="7.5,4.21 12,6.81 16.5,4.21"/>
+                            <polyline points="7.5,19.79 7.5,14.6 3,12"/>
+                            <polyline points="21,12 16.5,14.6 16.5,19.79"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Optimización de Rutas</h3>
+                    <p class="service-description">Planificación inteligente de rutas para reducir costos operativos y mejorar la eficiencia.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <rect x="7" y="9" width="10" height="7"/>
+                            <line x1="9" y1="9" x2="9" y2="16"/>
+                            <line x1="15" y1="9" x2="15" y2="16"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Dashboard Ejecutivo</h3>
+                    <p class="service-description">Panel de control con métricas clave, KPIs y análisis en tiempo real para la toma de decisiones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Features Section -->
+    <section id="caracteristicas" class="features">
+        <div class="container">
+            <div class="features-header">
+                <div class="features-title-section">
+                    <h2 class="section-title">Tecnología GPS Empresarial Avanzada</h2>
+                    <p class="section-subtitle">Dispositivos GPS de última generación diseñados específicamente para el entorno empresarial con funcionalidades avanzadas de gestión de flotas.</p>
+                </div>
+                <div class="features-image-section">
+                    <div class="device-mockup">
+                        <img src="assets/img/Tecnologia Avanzada.jpg" alt="Tecnología GPS Empresarial" class="device-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Control de Combustible</h4>
+                        <p>Monitoreo de consumo y eficiencia</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Configuración Avanzada</h4>
+                        <p>Personalización total del sistema</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Geozonas Inteligentes</h4>
+                        <p>Alertas automáticas de entrada/salida</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        </svg>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Integración API</h4>
+                        <p>Conexión con sistemas empresariales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Types Section -->
+    <section id="tipos-vehiculos" class="vehicle-types">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Soluciones para Todo Tipo de Vehículos</h2>
+                <p class="section-subtitle">Sistemas GPS especializados para cada tipo de vehículo empresarial</p>
+            </div>
+            <div class="vehicle-grid">
+                <div class="vehicle-card">
+                    <h3>Autos Comerciales</h3>
+                    <p>GPS para vehículos de empresa, vendedores y ejecutivos con control de rutas y horarios.</p>
+                </div>
+                <div class="vehicle-card">
+                    <h3>Camiones de Carga</h3>
+                    <p>Rastreo especializado para transporte de mercancías con control de peso y temperatura.</p>
+                </div>
+                <div class="vehicle-card">
+                    <h3>Buses y Transporte</h3>
+                    <p>Sistemas para transporte público y privado con control de pasajeros y rutas fijas.</p>
+                </div>
+                <div class="vehicle-card">
+                    <h3>Maquinaria Pesada</h3>
+                    <p>Monitoreo de equipos de construcción y maquinaria industrial con control de horas de trabajo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="ventajas" class="about">
+        <div class="container">
+            <div class="about-header">
+                <div class="about-title-section">
+                    <h2 class="section-title">¿Por qué elegir ROADSAFE para tu Empresa?</h2>
+                    <p class="section-subtitle">Somos la solución GPS empresarial más confiable del mercado, con tecnología de vanguardia y soporte especializado para empresas de todos los tamaños.</p>
+                </div>
+                <div class="about-image-section">
+                    <div class="about-graphic">
+                        <img src="assets/img/elegir.jpg" alt="ROADSAFE Empresarial" class="about-image-photo">
+                    </div>
+                </div>
+            </div>
+            <div class="about-features">
+                <div class="about-feature-card">
+                    <h3 class="feature-title">Escalabilidad Empresarial</h3>
+                    <p class="feature-description">Nuestro sistema crece con tu empresa, desde 5 hasta 1000+ vehículos, con planes flexibles que se adaptan a tus necesidades específicas.</p>
+                </div>
+                <div class="about-feature-card">
+                    <h3 class="feature-title">ROI Comprobado</h3>
+                    <p class="feature-description">Reduce costos operativos hasta un 30% con optimización de rutas, control de combustible y mejora en la productividad de conductores.</p>
+                </div>
+                <div class="about-feature-card">
+                    <h3 class="feature-title">Soporte Empresarial 24/7</h3>
+                    <p class="feature-description">Equipo técnico especializado disponible las 24 horas con SLA garantizado y respuesta prioritaria para empresas.</p>
+                </div>
+                <div class="about-feature-card">
+                    <h3 class="feature-title">Integración Completa</h3>
+                    <p class="feature-description">API robusta para integración con ERP, CRM y sistemas de gestión empresarial existentes, facilitando la adopción tecnológica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Steps Section -->
+    <section id="pasos" class="steps">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Implementa GPS Empresarial en 4 Pasos</h2>
+                <p class="section-subtitle">Proteger tu flota vehicular y optimizar operaciones nunca fue tan sencillo</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Selecciona tu Plan Empresarial</h3>
+                        <p>Elige el plan GPS corporativo que mejor se adapte al tamaño de tu flota y necesidades operativas. Pago seguro con WebPay empresarial.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Evaluación y Coordinación</h3>
+                        <p>Nuestro equipo comercial se contactará para evaluar tu flota y coordinar la implementación según tus horarios operativos.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Instalación Masiva Profesional</h3>
+                        <p>Técnicos especializados en flotas realizarán la instalación completa en tus instalaciones, minimizando el tiempo de inactividad.</p>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Plataforma y Capacitación</h3>
+                        <p>Recibirás acceso a la plataforma empresarial y capacitación completa para tu equipo de gestión de flotas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="steps-buttons">
+                <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20solicitar%20una%20cotización%20para%20el%20Plan%20Empresa%20GPS%20de%20ROADSAFE" target="_blank" class="btn btn-primary">Solicitar Cotización</a>
+                <a href="#servicios" class="btn btn-secondary">Ver Soluciones</a>
+            </div>
+        </div>
+    </section>
+
+</footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/1234567890?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20el%20Plan%20Empresa%20de%20ROADSAFE" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
+        </svg>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
