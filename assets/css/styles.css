@@ -459,12 +459,12 @@ body {
 
 /* Hero específico para Plan Persona */
 body[data-page="plan-persona"] .hero {
-    background: url('../img/Plan Persona.jpg') center/cover no-repeat;
+    background: url('../img/personas.jpg') center/cover no-repeat;
 }
 
 /* Hero específico para Plan Empresa */
 body[data-page="plan-empresa"] .hero {
-    background: url('../img/Plan Empresa.jpg') center/cover no-repeat;
+    background: url('../img/empresa 1.jpg') center/cover no-repeat;
 }
 
 
@@ -733,12 +733,24 @@ body[data-page="plan-empresa"] .hero {
     justify-content: center;
 }
 
-.features-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+/* Estilos para plan-persona.html */
+body[data-page="plan-persona"] .features-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.8rem;
     margin: 0 auto 3rem auto;
-    max-width: 900px;
+    max-width: 1300px;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+/* Estilos para plan-empresa.html */
+body[data-page="plan-empresa"] .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 auto 3rem auto;
+    max-width: 1400px;
     justify-items: center;
 }
 
@@ -747,19 +759,43 @@ body[data-page="plan-empresa"] .hero {
     margin-bottom: 3rem;
 }
 
-.feature-item {
+/* Estilos para plan-persona.html */
+body[data-page="plan-persona"] .feature-item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     background: linear-gradient(145deg, #ffffff 0%, var(--bg-accent) 100%);
-    padding: 0.75rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-sm);
+    padding: 1rem 0.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: var(--transition);
-    min-width: 0;
-    max-width: 200px;
+    min-width: 160px;
+    max-width: 160px;
+    width: 160px;
+    border: 2px solid #00c9a7;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+/* Estilos para plan-empresa.html */
+body[data-page="plan-empresa"] .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(145deg, #ffffff 0%, var(--bg-accent) 100%);
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
     width: 100%;
+    max-width: 280px;
+    border: 2px solid #00c9a7;
+    height: auto;
+    min-height: 160px;
 }
 
 .feature-item:hover {
@@ -777,17 +813,23 @@ body[data-page="plan-empresa"] .hero {
 }
 
 .feature-content h4 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.4rem;
-    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    line-height: 1.2;
 }
 
 .feature-content p {
     color: var(--text-secondary);
     line-height: 1.3;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .device-image {
@@ -886,37 +928,60 @@ body[data-page="plan-empresa"] .hero {
     justify-content: center;
 }
 
-.about-features {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+/* Estilos para plan-persona.html */
+body[data-page="plan-persona"] .about-features {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 2rem;
 }
 
-.about-feature {
+/* Estilos para index.html */
+body:not([data-page]) .about-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Estilos para plan-persona.html */
+body[data-page="plan-persona"] .about-feature {
     background: linear-gradient(145deg, #ffffff 0%, var(--bg-accent) 100%);
-    padding: 2rem;
-    border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-md);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: var(--transition);
-    border: 2px solid transparent;
+    border: 3px solid #00c9a7;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 1rem;
-    height: 100%;
+    height: auto;
+    min-height: 120px;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+/* Estilos para index.html */
+body:not([data-page]) .about-feature {
+    background: linear-gradient(145deg, #ffffff 0%, var(--bg-accent) 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    border: 2px solid #00c9a7;
+    text-align: left;
+    height: auto;
+    min-height: 120px;
 }
 
 .about-feature-icon {
-    width: 40px;
-    height: 40px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    flex-shrink: 0;
+    display: none;
 }
 
 .about-feature-icon svg {
@@ -972,9 +1037,9 @@ body[data-page="plan-empresa"] .hero {
 }
 
 .about-img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
+    width: 100% !important;
+    max-width: 1500px !important;
+    height: auto !important;
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-lg);
     transition: var(--transition);
@@ -998,17 +1063,17 @@ body[data-page="plan-empresa"] .hero {
 
 .about-main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     margin: 2rem 0;
-    align-items: start;
+    align-items: center;
 }
 
 .about-image {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-left: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 .about-features {
@@ -1032,8 +1097,8 @@ body[data-page="plan-empresa"] .hero {
     }
     
     .about-img {
-        max-width: 100%;
-        width: 90%;
+        max-width: 1500px !important;
+        width: 100% !important;
         margin: 0 auto;
     }
     
@@ -3306,7 +3371,15 @@ textarea:focus,
     
     /* Secciones */
     section {
-        padding: 3rem 0;
+        padding: 4rem 0;
+    }
+    
+    /* Secciones específicas con mejor espaciado */
+    .services,
+    .features,
+    .about,
+    .steps {
+        padding: 4.5rem 0;
     }
     
     /* Hero específico para móvil */
@@ -3336,16 +3409,20 @@ textarea:focus,
     
     /* Títulos */
     .section-title {
-        font-size: clamp(1.5rem, 5vw, 2rem);
+        font-size: clamp(1.6rem, 5.5vw, 2.2rem);
         text-align: center;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.8rem;
         line-height: 1.3;
+        padding: 0 1rem;
     }
     
     .section-subtitle {
-        font-size: 1rem;
+        font-size: clamp(0.95rem, 4vw, 1.1rem);
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.5;
+        padding: 0 1rem;
+        color: var(--text-secondary);
     }
     
     /* Grids responsive */
@@ -3356,7 +3433,14 @@ textarea:focus,
     .about-features,
     .retail-benefits {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
+        padding: 0 0.5rem;
+    }
+    
+    /* Grilla de características específica */
+    .features-grid {
+        gap: 2.5rem;
+        padding: 1rem 0.5rem;
     }
     
     /* Tarjetas */
@@ -3406,32 +3490,35 @@ textarea:focus,
     
     /* Tarjetas de características GPS específicas para móvil */
     .feature-card {
-        padding: 1.5rem;
-        margin: 0 auto 1.5rem;
+        padding: 1.8rem 1.5rem;
+        margin: 0 auto 1.8rem;
         margin-left: 0 !important;
-        border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
         background: linear-gradient(145deg, #ffffff 0%, var(--bg-accent) 100%);
-        border: 1px solid var(--primary-color);
+        border: 2px solid var(--primary-color);
         text-align: center;
         max-width: 100%;
         min-height: auto;
         width: 100%;
         box-sizing: border-box;
+        transition: all 0.3s ease;
     }
     
     .feature-card h3 {
-        font-size: 1.2rem;
-        margin: 0.8rem 0;
+        font-size: 1.3rem;
+        margin: 1rem 0 0.8rem;
         color: var(--primary-color);
         font-weight: 700;
+        line-height: 1.3;
     }
     
     .feature-card p {
-        font-size: 0.9rem;
-        line-height: 1.5;
+        font-size: 0.95rem;
+        line-height: 1.6;
         color: var(--text-secondary);
         margin: 0;
+        padding: 0 0.5rem;
     }
     
     .feature-card:hover {
@@ -3443,8 +3530,44 @@ textarea:focus,
     .product-features {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
         width: 100%;
+        padding: 0 0.5rem;
+    }
+    
+    /* Feature items específicos para móvil */
+    .feature-item {
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        border: 1px solid rgba(0, 201, 167, 0.2);
+        transition: all 0.3s ease;
+    }
+    
+    .feature-item:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 201, 167, 0.15);
+        border-color: var(--primary-color);
+    }
+    
+    .feature-item .feature-icon {
+        margin-bottom: 1rem;
+        color: var(--primary-color);
+    }
+    
+    .feature-item h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+    
+    .feature-item p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--text-secondary);
+        margin: 0;
     }
     
     /* Imágenes responsive */
