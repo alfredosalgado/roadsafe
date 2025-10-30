@@ -2952,6 +2952,49 @@ body:not([data-page]) .about-feature {
     line-height: 1.6;
 }
 
+/* Enlaces de contacto */
+.contact-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.contact-details a:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Enlaces específicos para teléfono */
+.contact-details a[href^="tel:"] {
+    color: var(--primary-color);
+}
+
+.contact-details a[href^="tel:"]:hover {
+    color: var(--primary-dark);
+    transform: scale(1.02);
+}
+
+/* Enlaces específicos para email */
+.contact-details a[href^="mailto:"] {
+    color: var(--primary-color);
+}
+
+.contact-details a[href^="mailto:"]:hover {
+    color: var(--primary-dark);
+    transform: scale(1.02);
+}
+
+/* Enlaces específicos para direcciones (Google Maps) */
+.contact-details a[href*="maps.google.com"] {
+    color: var(--primary-color);
+}
+
+.contact-details a[href*="maps.google.com"]:hover {
+    color: var(--primary-dark);
+    transform: scale(1.02);
+}
+
 /* Contact Form */
 .contact-form {
     background-color: white;
@@ -3225,6 +3268,20 @@ body:not([data-page]) .about-feature {
     font-size: 0.875rem;
     margin-bottom: 0.25rem;
     line-height: 1.4;
+}
+
+/* Enlaces de contacto en el footer */
+.contact-info-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.contact-info-item a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    transform: scale(1.02);
 }
 
 .social-section {
