@@ -3249,7 +3249,7 @@ body:not([data-page]) .about-feature {
 }
 
 .footer-contact-info {
-    margin-top: 1.5rem;
+    margin-top: 0rem;
 }
 
 .contact-info-item {
